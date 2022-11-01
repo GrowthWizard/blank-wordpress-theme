@@ -4,7 +4,7 @@
 * functions.php is only needed to enable WordPress Features we would like to use later for our REST API
 */
 
-if ( function_exists(' blank-wordpress-theme-setup ')) {
+if ( !function_exists(' blank-wordpress-theme-setup ')) {
     function blank-wordpress-theme-setup() {
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'title-tag' );
