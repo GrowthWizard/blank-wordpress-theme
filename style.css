@@ -1,0 +1,15 @@
+/*
+Theme Name: Blank WordPress Theme
+Theme URI: https://github.com/GrowthWizard/blank-wordpress-theme
+Author: Dominik Stein
+Author URI: https://steindominik.de/
+Description: A WordPress Theme which doesn't show any content in the frontend and is completely blank. Since the Backend (exampledomain.de/wp-content) is still available, you can use this WordPress Theme as headless CMS for any Javascript Framework you like (i.e. via RestAPI). Enjoy!
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: featured-images, theme-options,
+Text Domain: blank-wordpress-theme
+Requires at least: 4.6
+Tested up to: 6.3
+Requires PHP: 5.6
+*/
