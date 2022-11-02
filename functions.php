@@ -4,8 +4,9 @@
 * functions.php is only needed to enable WordPress Features we would like to use later for our REST API
 */
 
-if ( !function_exists(' blank-wordpress-theme-setup ')) {
-    function blank-wordpress-theme-setup() {
+function blank_wordpress_theme_support() {
+
+		 #Enables RSS Feed Links
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' );
@@ -22,8 +23,8 @@ if ( !function_exists(' blank-wordpress-theme-setup ')) {
 			)
 		);
     }
-}
 
-endif;
+add_action( 'after_setup_theme', 'blank_wordpress_theme_support' );
 
-add_action( 'after_setup_theme', 'blank_setup' );
+/* Disable WordPress Admin Bar for all users */
+add_filter( 'show_admin_bar', '__return_false' );
